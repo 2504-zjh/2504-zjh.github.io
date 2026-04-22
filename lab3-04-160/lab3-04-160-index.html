@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>春天书店 - 数字展销平台</title>
+    <link rel="stylesheet" href="css/lab3-04-160-index.css">
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <img src="img/秋天书店.jpg" alt="秋天书店logo">
+        </div>
+        <div class="daohang">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li class="dropdown">
+                    <a href="#">新书上架</a>
+                    <div class="dropdown-content">
+                        <a href="#">计算机类</a>
+                        <a href="#">儿童读物</a>
+                        <a href="#">文学类</a>
+                        <a href="#">艺术类</a>
+                        <a href="#">教育类</a>
+                        <a href="#">经济类</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">图书分类</a>
+                    <div class="dropdown-content">
+                        <a href="#">科技</a>
+                        <a href="#">历史</a>
+                        <a href="#">文学</a>
+                        <a href="#">艺术</a>
+                        <a href="#">儿童</a>
+                        <a href="#">教育</a>
+                        <a href="#">生活</a>
+                        <a href="#">经济</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">促销活动</a>
+                    <div class="dropdown-content">
+                        <a href="#">现实折扣</a>
+                        <a href="#">优惠满减</a>
+                    </div>
+                </li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">更多</a></li>
+                <li><button id="login-btn">登录</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="left">
+            <h2>图书分类</h2>
+            <ul>
+                <li><a href="#">科技</a></li>
+                <li><a href="#">历史</a></li>
+                <li><a href="#">文学</a></li>
+                <li><a href="#">艺术</a></li>
+                <li><a href="#">儿童</a></li>
+                <li><a href="#">教育</a></li>
+                <li><a href="#">生活</a></li>
+                <li><a href="#">经济</a></li>
+            </ul>
+        </div>
+
+        <div class="zhongjian">
+            <h2>热门推荐</h2>
+            <div class="zhuti-big">
+                <div class="zhuti-small">
+                    <img src="img/计算机导论.png" alt="计算机导论">
+                    <h3>《计算机导论》</h3>
+                    <p>作者: 袁方</p>
+                    <p>价格: ¥49.90</p>
+                    <div class="book-overlay">
+                        <h3>《计算机导论》</h3>
+                        <p>作者: 袁方</p>
+                        <p>价格: ¥49.90</p>
+                        <p>本书全面介绍计算机科学基础知识，适合初学者。</p>
+                    </div>
+                </div>
+                <div class="zhuti-small">
+                    <img src="img/程序设计基础.png" alt="程序设计基础">
+                    <h3>《程序设计基础》</h3>
+                    <p>作者: 张小峰</p>
+                    <p>价格: ¥59.90</p>
+                    <div class="book-overlay">
+                        <h3>《程序设计基础》</h3>
+                        <p>作者: 张小峰</p>
+                        <p>价格: ¥59.90</p>
+                        <p>从零开始学习编程，掌握基本编程思维和技能。</p>
+                    </div>
+                </div>
+                <div class="zhuti-small">
+                    <img src="img/Linux应用与实训教程.png" alt="Linux应用于实训教程">
+                    <h3>《Linux应用于实训教程》</h3>
+                    <p>作者: 刘飞</p>
+                    <p>价格: ¥69.90</p>
+                    <div class="book-overlay">
+                        <h3>《Linux应用于实训教程》</h3>
+                        <p>作者: 刘飞</p>
+                        <p>价格: ¥69.90</p>
+                        <p>全面讲解Linux系统应用，包含大量实战案例。</p>
+                    </div>
+                </div>
+                <div class="zhuti-small">
+                    <img src="img/高等数学.jpeg" alt="高等数学">
+                    <h3>《高等数学》</h3>
+                    <p>作者: 同济大学</p>
+                    <p>价格: ¥39.90</p>
+                    <div class="book-overlay">
+                        <h3>《高等数学》</h3>
+                        <p>作者: 同济大学</p>
+                        <p>价格: ¥39.90</p>
+                        <p>大学高等数学经典教材，内容详实，例题丰富。</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>新书上市</h2>
+            <table class="new-book-table">
+                <thead>
+                    <tr>
+                        <th>书名</th>
+                        <th>作者</th>
+                        <th>出版社</th>
+                        <th>价格</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>《人工智能导论》</td>
+                        <td>张三</td>
+                        <td>科技出版社</td>
+                        <td>¥79.90</td>
+                    </tr>
+                    <tr>
+                        <td>《Web前端开发实战》</td>
+                        <td>李四</td>
+                        <td>计算机出版社</td>
+                        <td>¥69.90</td>
+                    </tr>
+                    <tr>
+                        <td>《数据科学入门》</td>
+                        <td>王五</td>
+                        <td>数据出版社</td>
+                        <td>¥89.90</td>
+                    </tr>
+                    <tr>
+                        <td>《Python编程进阶》</td>
+                        <td>王磊</td>
+                        <td>编程出版社</td>
+                        <td>¥59.90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="right">
+            <h2>促销信息</h2>
+            <div class="promo-item">
+                <h3>春季图书大促</h3>
+                <p>全场图书7折起，满100元包邮</p>
+            </div>
+            <div class="promo-item">
+                <h3>新会员专享</h3>
+                <p>注册即送20元优惠券</p>
+            </div>
+            <div class="promo-item">
+                <h3>积分兑换</h3>
+                <p>100积分可兑换10元优惠券</p>
+            </div>
+            <div class="promo-item">
+                <h3>限时秒杀</h3>
+                <p>每日10点热门图书限时秒杀</p>
+            </div>
+        </div>
+        
+        <div class="clear"></div>
+    </div>
+
+    <div class="back-to-top">
+        <span>↑</span>
+    </div>
+
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="login-form" class="form-container">
+                <h2>登录</h2>
+                <form id="loginForm">
+                    <label for="login-username">用户名:</label>
+                    <input type="text" id="login-username" required>
+                    <label for="login-password">密码:</label>
+                    <input type="password" id="login-password" required>
+                    <label for="login-captcha">验证码:</label>
+                    <input type="text" id="login-captcha" placeholder="">
+                    <button type="submit">登录</button>
+                </form>
+                <p>还没有账号？<a href="#" id="switch-to-register">注册</a></p>
+            </div>
+            <div id="register-form" class="form-container" style="display: none;">
+                <h2>注册</h2>
+                <form id="registerForm">
+                    <label for="register-username">用户名:</label>
+                    <input type="text" id="register-username" required>
+                    <label for="register-password">密码:</label>
+                    <input type="password" id="register-password" required>
+                    <label for="register-confirm-password">确认密码:</label>
+                    <input type="password" id="register-confirm-password" required>
+                    <label for="register-captcha">验证码:</label>
+                    <input type="text" id="register-captcha" placeholder="">
+                    <button type="submit">注册</button>
+                </form>
+                <p>已有账号？<a href="#" id="switch-to-login">登录</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const backToTopButton = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('show');
+                } else {
+                    backToTopButton.classList.remove('show');
+                }
+            });
+            backToTopButton.addEventListener('click', () => {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
+
+            const modal = document.getElementById('auth-modal');
+            const loginBtn = document.getElementById('login-btn');
+            const closeBtn = document.querySelector('.close');
+            const switchToRegister = document.getElementById('switch-to-register');
+            const switchToLogin = document.getElementById('switch-to-login');
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+
+            loginBtn.onclick = function() {
+                modal.style.display = 'block';
+            }
+
+            closeBtn.onclick = function() {
+                modal.style.display = 'none';
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
+
+            switchToRegister.onclick = function(e) {
+                e.preventDefault();
+                loginForm.style.display = 'none';
+                registerForm.style.display = 'block';
+            }
+
+            switchToLogin.onclick = function(e) {
+                e.preventDefault();
+                registerForm.style.display = 'none';
+                loginForm.style.display = 'block';
+            }
+
+            document.getElementById('registerForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const username = document.getElementById('register-username').value;
+                const password = document.getElementById('register-password').value;
+                const confirmPassword = document.getElementById('register-confirm-password').value;
+
+                if (password !== confirmPassword) {
+                    alert('密码和确认密码不匹配');
+                    return;
+                }
+
+                const users = JSON.parse(localStorage.getItem('users') || '{}');
+                if (users[username]) {
+                    alert('用户名已存在');
+                    return;
+                }
+
+                users[username] = password;
+                localStorage.setItem('users', JSON.stringify(users));
+                alert('注册成功');
+                modal.style.display = 'none';
+            });
+
+            document.getElementById('loginForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const username = document.getElementById('login-username').value;
+                const password = document.getElementById('login-password').value;
+
+                const users = JSON.parse(localStorage.getItem('users') || '{}');
+                if (users[username] === password) {
+                    alert('登录成功');
+                    modal.style.display = 'none';
+               
+                } else {
+                    alert('用户名或密码错误');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
